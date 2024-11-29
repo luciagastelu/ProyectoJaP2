@@ -1,0 +1,1069 @@
+.jumbotron,
+.card-body,
+.container,
+.site-header {
+  font-family: 'Verdana', serif !important;
+}
+
+.jumbotron .display-4 {
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.jumbotron {
+  height: 50vh;
+  padding: 5em inherit;
+  margin-bottom: 0;
+  background-color: #53C0FB;
+  background: url('../img/cover_back.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: black;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  text-shadow: 1px 1px 2px grey;
+}
+
+.jumbotron .lead {
+  font-size: 38px;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+.site-header a {
+  color: white;
+  transition: ease-in-out color .15s;
+}
+
+.site-header .dropdown-menu a {
+  color: black;
+}
+
+.dropzone {
+  border: 2px dashed #0087F7;
+  border-radius: 5px;
+  background: white;
+}
+
+.img-fit {
+  max-height: 100%;
+}
+
+.alert {
+  position: fixed;
+  top: 80px;
+  width: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+  top: 50%;
+  left: 50%;
+}
+
+.cursor-active {
+  cursor: pointer;
+}
+
+.left {
+  float: left;
+  padding: 4px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 51px;
+  height: 51px;
+  margin: 6px;
+  border: 6px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+#spinner-wrapper {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1021;
+  display: none;
+}
+
+main {
+  min-height: calc(100vh - 210px);
+}
+
+a.custom-card,
+a.custom-card:hover {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.checked {
+  color: orange;
+}
+
+
+.container {
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  text-align: -webkit-center;
+
+* {
+  box-sizing: border-box;
+}
+
+.table {
+  width: 75%;
+  border-collapse: collapse;
+}
+
+.table td,
+.table th {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center; /* Alineación centrada por defecto */
+}
+
+.table th {
+  background-color: orange;
+  color: #ffffff;
+}
+
+@media (max-width: 700px) {
+  .table thead {
+    display: none; /* Mantener oculto el <thead> en móviles */
+  }
+
+  .table, 
+  .table tbody, 
+  .table tr, 
+  .table td {
+    display: block; /* Cambiar a diseño de bloque */
+    width: 100%; /* Ancho completo para cada elemento */
+  }
+
+  .table tr {
+    margin-bottom: 15px; /* Separación entre filas */
+  }
+
+  .table td {
+    text-align: left; /* Alineación a la izquierda en móviles */
+    padding-left: 50%; /* Dejar espacio para pseudo-elementos */
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+  }
+
+  .table td::before {
+    content: attr(data-label); /* Etiquetas basadas en los atributos data-label */
+    position: absolute;
+    left: 0; /* Alineación izquierda del pseudo-elemento */
+    width: 45%; /* Ajusta el ancho del pseudo-elemento */
+    padding-left: 15px; /* Espaciado a la izquierda */
+    font-weight: bold; /* Negrita para los pseudo-elementos */
+    text-align: left; /* Alineación del pseudo-elemento */
+  }
+}
+
+body {
+  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Pantalla Login */
+
+.recuadro { /* Recuadro del div que contiene elementos del login */
+  padding: 5% 5% 5% 5%; /* Espacio interno entre el borde y el contenido, arriba y abajo, izq y der*/
+  margin: auto;/*Espacio externo,izquierda y derecha del recuadro*/
+  margin-top: 8%; /* Espacio externo superior del recuadro */
+  text-align: center; /* Centrar elementos dentro del recuadro */
+  background-color: rgba(0, 0, 0, 0.1); /* Fondo semitransparente para el div */
+  border-radius: 5%; /* Redondear borde */
+  height: 30%; /* Altura div */
+  width: 50%; /* Ancho div */
+
+}
+
+.titulologin { /* Titulo Bienvenido */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;/* Fuente de la letra */
+  color: #ea9512; /* Color al titulo */
+}
+
+.campo_texto::placeholder { /* Campos que se vacían cuando los voy a completar */
+  color: #666666; /* Color del texto del placeholder */
+  opacity: 0.7; /* Transparencia del texto del placeholder */
+  padding: 8%; /* Espacio interno */
+  font-size: 70%; /* Tamaño de la fuente */ 
+}
+
+.campo_texto { /* Recuadro para ingresar texto usuario y contraseña */
+  background-color: #dcdcdc;
+  border-radius: 10vw;/* Redondear bordes */
+  height: 200%; /* Altura recuadro */
+  width: 80%; /* Ancho recuadro */
+  border: 5% solid #6d6d6d; /* Color y grosor de bordes */
+  box-shadow: 0 4px 1px rgba(0, 0, 0, 0.1); /* Sombra a los campos */
+  margin-top:10%; /* Espacio superior entre el elemento y el elemento anterior */
+}
+
+.botoningresar { /* Boton ingresar */
+  background-color: #dcdcdc; /* Color de fondo */
+  padding: 0.2vw 1vw; /* Espacio interno */
+  border: 1px solid #6d6d6d;
+  border-radius: 10vw; /* Redondear bordes */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  font-size: 110%; /* Tamaño de la fuente */
+  margin-top:10%; /* Espacio superior entre el elemento y el elemento anterior */
+}
+
+.olvido { /* Texto final de olvido de contraseña*/
+  margin-bottom:0.02vw; /* Espacio entre el texto de los diferentes renglones */
+  font-size: 70%; /* Tamaño de la fuente */
+  margin-top: 10%; /* Espacio superior entre el elemento y el elemento anterior */
+}
+
+.registro { /* Texto final de registro */
+  font-size: 70%; /* Tamaño de la fuente */
+  margin-top: 5%; /* Espacio superior entre el elemento y el elemento anterior */
+}
+
+a {
+  color:#fcce6c; /* Color de los hipervinculos */
+  font-weight: bold; /* Ponerle negrita al texto */
+}
+}
+
+/* Fin login*/
+
+
+/*Inicio Categorias*/
+
+* {
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+
+.sidebar {
+  max-width: 400px; /* Ancho máximo para el contenedor del buscador */
+  border: 1% solid #eee;
+  padding: 1%;
+  margin: 1%;
+  box-shadow: 0px 0px 3px gray;
+  display:grid;
+ 
+}
+
+.searchbar {
+  width: 100%; /* Ocupa el ancho completo del contenedor .sidebar */
+  max-width: 300px; /* Ancho máximo para el buscador */
+  background-color: #eee;
+  border-radius: 1%;
+  margin: 1%;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 2px rgba(0,0,0,0.2); /* Sombra para mejorar visibilidad */
+}
+
+input {
+  width: 85%;
+  border: none;
+  outline: none;
+  background: none;
+  flex: 1; /* Ocupa el espacio disponible */
+  padding: 5px; /* Espaciado dentro del campo de entrada */
+}
+
+.glass {
+  color: #333; /* Color del icono de búsqueda */
+  margin-left: 1px; /* Espacio entre el input y el icono */
+}
+
+.glass:hover {
+  color: orangered;
+  cursor: pointer;
+}
+
+/* Fin categorias */
+
+.wrapper {
+  background: var(--white);
+  padding: 2rem;
+  max-width: 576px;
+  width: 100%;
+  border-radius: .75rem;
+  box-shadow: var(--shadow);
+}
+
+.wrapper h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap: .5rem;
+  font-size: 2rem;
+  color: rgb(245, 222, 18);
+  margin-bottom: 2rem;
+}
+
+.rating .star {
+  cursor: pointer;
+}
+
+.rating .star.active {
+  opacity: 0;
+  animation: animate .5s ease-in-out forwards;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.rating .star:hover {
+  transform: scale(1.1);
+}
+
+textarea {
+  width: 100%;
+  background: whitesmoke;
+  padding: 1rem;
+  border-radius: .5rem;
+  border: none;
+  outline: none;
+  resize: none;
+  margin-bottom: .5rem;
+}
+
+.btn-group {
+  display: flex;
+  grid-gap: .5rem;
+  align-items: center;
+}
+
+.btn-group .btn {
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: .875rem;
+  font-weight: 500;
+}
+
+.btn-group .btn.submit {
+  background: lightskyblue;
+  color: white;
+}
+
+.btn-group .btn.submit:hover {
+  background: blue;
+}
+
+.btn-group .btn.cancel {
+  background: white;
+  color: lightskyblue;
+}
+
+.btn-group .btn.cancel:hover {
+  background: light;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.seccion-perfil-usuario {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.perfil-usuario-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.perfil-usuario-portada {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 17rem;
+  background: linear-gradient(45deg, #fcce6c, #53C0FB);
+  border-radius: 0 0 20px 20px;
+}
+
+.perfil-usuario-avatar {
+  display: flex;
+  width: 180px;
+  height: 180px;
+  align-items: center;
+  justify-content: center;
+  border: 7px solid #ffffff;
+  background-color: #dcdcdc;
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(0,0,0,0.2);
+  position: absolute;
+  bottom: -40px;
+  left: calc(50% - 90px);
+  z-index: 1;
+}
+
+.perfil-usuario-avatar img {
+  width: 100%;
+  position: relative;
+  border-radius: 50%;
+}
+
+.perfil-usuario-avatar .boton-avatar {
+  position: absolute;
+  right: -2px;
+  top: -2px;
+  border: 0;
+  background-color: #fff;
+  box-shadow: 0 0 12px rgba(0,0,0,0.2);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.perfil-usuario-body {
+  width: 100%;
+  position: relative;
+  max-width: 750px;
+}
+
+.perfil-usuario-bio {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 0 12px rgba(0,0,0,0.2);
+  background-color: #fff;
+  border-radius: 15px;
+  width: 100%;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+.perfil-usuario-bio h3 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.perfil-usuario-bio p {
+  color: #848484;
+  font-size: 0.95em;
+  width: 100%;
+}
+
+#bio-usuario {
+  display: none; /* Oculta solo la bio (información del usuario) */
+}
+
+
+.perfil-usuario-footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 0 12px rgba(0,0,0,0.2);
+  background-color: #fff;
+  border-radius: 15px;
+  width: 100%;
+}
+
+/* Ajustes generales */
+.form-group {
+  display: flex;
+  flex-direction: row; /* Mantiene íconos, etiquetas e inputs en línea */
+  align-items: center;
+  margin-bottom: 15px;
+  width: 100%; /* Asegura que cada grupo de formulario ocupe todo el ancho */
+  box-sizing: border-box; /* Asegura que padding y borders estén incluidos en el ancho */
+}
+
+.form-group i {
+  margin-right: 10px;
+  font-size: 1.2em;
+  align-self: center; /* Alinea el ícono en el centro verticalmente */
+}
+
+.form-group label {
+  flex-shrink: 0;
+  margin-right: 10px;
+  min-width: 120px; /* Asegura un ancho consistente para las etiquetas */
+  text-align: left;
+  align-self: center; /* Alinea la etiqueta en el centro verticalmente */
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"] {
+  flex-grow: 1; /* Hace que el input ocupe todo el espacio disponible */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  height: 40px; /* Mantiene la misma altura para todos los inputs */
+  width: 100%; /* Asegura que el input ocupe todo el espacio horizontal posible */
+  box-sizing: border-box; /* Incluye padding y borders en el ancho total */
+}
+
+.lista-datos {
+  width: 100%; /* Asegura que las columnas ocupen el 100% del contenedor */
+  display: flex;
+  flex-direction: column; /* Cambia a una disposición vertical */
+}
+
+
+
+
+.btn-guardar {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #53C0FB;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.btn-guardar:hover {
+  background: #45a0d1;
+}
+
+.wrapper-comments {
+  background: var(--white);
+  padding: 2rem;
+  max-width: 576px;
+  width: 100%;
+  border-radius: .75rem;
+  box-shadow: var(--shadow);
+}
+
+.wrapper-comments h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.rating-comments {
+  display: flex;
+  justify-content: flex-start; /* Cambiado para alinear a la izquierda */
+  align-items: center;
+  grid-gap: .5rem;
+  font-size: 2rem;
+  color: rgb(245, 222, 18);
+  margin-bottom: 1rem; /* Cambiado de 2rem a 1rem para que esté más cerca del nombre */
+}
+
+.rating-comments .star {
+  cursor: pointer;
+}
+
+#comment-section {
+  background-color: #f8f9fa; /* Fondo suave */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  margin-top: 20px; /* Espacio superior */
+}
+
+.comentario {
+  background-color: #ffffff; /* Fondo blanco para los comentarios */
+  border: 1px solid #dee2e6; /* Borde suave */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 15px; /* Espaciado interno */
+  margin-bottom: 10px; /* Espacio entre comentarios */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.calificacion {
+  color: #ffc107; /* Color dorado para las estrellas */
+  font-size: 1.2em; /* Tamaño de fuente mayor para las estrellas */
+  margin-bottom: 5px;
+  float: left;
+}
+
+.usuario {
+  font-weight: bold; /* Usuario en negrita */
+  margin-top: 45px; /* Espacio superior */
+  text-align: left;
+}
+
+.fecha {
+  color: #6c757d; /* Color gris para la fecha */
+  font-size: 0.9em; /* Tamaño de fuente más pequeño */
+  float: right; /* Alinear a la derecha */
+  margin-top: -65px;
+}
+
+.texto-comentario {
+  margin-top: 10px; /* Espacio superior */
+  text-align: left; /* Alinear texto a la izquierda */
+}
+
+.nav-item {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  align-content: right;
+  top: 108%;
+  left: 0;
+  background-color: #212529;
+  border-radius: 2px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  padding: 10px 0;
+  min-width: 270px;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 8px 20px;
+  color: #b8b8b8 !important; /* Color gris para los elementos del menú */
+  text-decoration: none;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  position: relative;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: calc(100% - 1rem); /* Ajustar el ancho para que no se salga */
+  box-sizing: border-box;
+  position: relative;
+}
+
+.dropdown-item i{
+  margin-right: 1rem;
+}
+
+.dropdown-item:hover {
+  background-color: #333; /* Color de fondo más claro al pasar el mouse */
+  color: #fff !important; /* Color blanco al pasar el mouse para mejor contraste */
+}
+
+/* Evitar que el dropdown-menu se salga de la pantalla */
+.dropdown-menu {
+  max-width: calc(100vw - 20px); /* Se ajusta al tamaño de la ventana */
+}
+
+.dropdown-item:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 5px;
+  width: calc(100% - 10px); 
+  height: 100%;
+  background-color: #444;
+  border-radius: 8px;
+  z-index: -1;
+  transition: background-color 0.3s ease;
+}
+
+
+.navbar-nav .nav-item:last-child .dropdown-menu {
+  left: auto;
+  right: -150%;
+}
+
+.hr-dropdown{
+  border: 0; 
+  height: 1px; 
+  background-color: #ccc; 
+  margin: 0.2rem 0; 
+  width: 100%; 
+  align-self: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .dropdown-menu {
+    max-width: 90%; /* Que no ocupe más del 90% de la pantalla */
+  }
+}
+
+/* Para pantallas aún más pequeñas */
+@media screen and (max-width: 767px) {
+  .dropdown-menu {
+    left: 0;
+    right: 0;
+    width: 100%; /* Que ocupe el 100% del contenedor */
+  }
+  
+  .dropdown-item {
+    width: calc(100% - 2rem);
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .dropdown-item:hover::before {
+    content: '';
+    position: absolute; /* Mantener absolute */
+    top: 0;
+    left: 0; /* Alinearlo completamente a la izquierda */
+    width: 100%; /* Asegurar que cubra todo el ancho */
+    height: 100%;
+    background-color: #444;
+    border-radius: 8px;
+    z-index: -1;
+    transition: background-color 0.3s ease;
+}
+}
+
+/* Modo Día - por defecto */
+body {
+  background-color: white;
+  color: black;
+}
+
+/* Modo Noche */
+body.night-mode {
+  background-color: black;
+  color: white;
+}
+
+/*.card {
+  background-color: white;
+}*/
+
+body.night-mode .card {
+  background-color: #333;
+  color: white;
+}
+
+.btn {
+  background-color: #007bff;
+  color: white;
+}
+
+/*body.night-mode .btn {
+  background-color: #444;
+  color: white;
+}*/
+
+
+body.night-mode #comment-section {
+  background-color: black; /* Fondo negro para el contenedor */
+  color: white; /* Texto blanco dentro del contenedor */
+}
+
+body.night-mode .container {
+  background-color: black; /* Fondo negro para el contenedor */
+  color: white; /* Texto blanco dentro del contenedor */
+}
+
+body.night-mode .btn {
+  background-color: #444;
+  color: white;
+}
+
+
+.night-mode .perfil-usuario-bio {
+  background-color: black;
+  color: white;
+}
+
+.night-mode .perfil-usuario-footer {
+  background-color: black;
+  color: white;
+}
+
+.night-mode .list-group-item {
+  background-color: black;
+  color: white;
+}
+
+.night-mode .wrapper {
+  background-color: black;
+  color: white;
+}
+
+.night-mode .btn-group {
+  background-color: black;
+  color: white;
+}
+
+.night-mode .comentario {
+  background-color: black;
+  color: white;
+
+}
+
+/*ESTILOS PARA EL CARRITO*/
+.container .cart {
+  margin: 20px;
+}
+
+.cart h2 {
+  text-align: left;
+  font-weight: bolder;
+}
+
+.cart-container {
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  background-color: #fff;
+}
+
+.container .cart i.fa-cart-shopping {
+  font-size: 2em;
+  position: absolute;
+  right: 130px; 
+  top: 70px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  gap: 15px;
+}
+
+.product-image {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-width: 150px;
+  margin-left: 0px;
+  align-items: flex-start;
+}
+
+.product-name {
+  font-weight: bold;
+  margin: 0;
+}
+
+.product-quantity {
+  margin-top: 5px;
+}
+
+.product-price-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  min-width: 120px;
+}
+
+.product-price,
+.product-subtotal {
+  margin: 0;
+}
+
+.remove-btn {
+  margin-top: 5px;
+  align-self: flex-end;
+  color: black;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+.remove-btn:hover {
+  color: red; 
+}
+.remove-btn:active {
+  opacity: 0.6; 
+  transform: scale(0.95); 
+}
+
+.cart-total {
+  display: flex;
+  flex-direction: column; /* Cambia a columna para que los elementos se apilen verticalmente */
+  align-items: flex-end; /* Alinea los elementos a la derecha */
+  margin-top: 20px; 
+}
+
+/* Estilo del subtotal */
+.cart-total p {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 0; /* Quita el margen para mejor alineación */
+}
+
+/* Estilo del botón Comprar */
+.purchase-btn {
+  background-color: #000000; /* Color verde para el botón */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.purchase-btn:hover {
+  background-color: #212422; /* Color de hover */
+}
+
+.purchase-btn:active {
+  transform: scale(0.98); /* Efecto de "presionado" */
+}
+
+.empty-cart {
+  background-color: #e0f7fa; /* Color celeste */
+  border: 2px solid #4db6ac; /* Color de borde */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  margin: 20px 0; /* Espaciado externo */
+}
+
+.empty-cart h4 {
+  font-size: 2em; /* Tamaño de letra grande */
+  margin: 0; /* Sin margen */
+}
+
+.empty-cart p {
+  font-size: 1.2em; /* Ajusta el tamaño del texto del mensaje */
+  margin-top: 10px; /* Espacio entre el título y el mensaje */
+}
+
+
+/* Estilos cart.html */
+.form-label {
+  text-align: left;
+  display: block; /* Esto asegura que las etiquetas se mantengan alineadas a la izquierda */
+}
+ p {
+  text-align: left;
+  display: block; /* Esto asegura que las etiquetas se mantengan alineadas a la izquierda */
+ }
