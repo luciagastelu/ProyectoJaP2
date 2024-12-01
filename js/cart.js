@@ -46,7 +46,7 @@ function displayCart() {
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
     let subtotal = 0;
 
-    // Si el carrito está vacío, mostrar un mensaje
+    // Muestra un mensaje si el carrito esta vacío
     if (cart.length === 0) {
         cartContainer.innerHTML = `
             <div class="alert alert-info text-center empty-cart">
@@ -55,6 +55,8 @@ function displayCart() {
             </div>
         `;
         document.querySelector('.cart-total').style.display = 'none';
+
+        toggleTabs(cart);
         return;
     }
 
@@ -95,6 +97,26 @@ function displayCart() {
     document.querySelectorAll('.remove-btn').forEach(button => {
         button.addEventListener('click', removeItem);
     });
+}
+
+//Muestra pestañas en función del carrito
+function toggleTabs(cart) {
+    const costosTab = document.getElementById('costos-tab');
+    const direccionTab = document.getElementById('direccion-tab');
+    const direccion = document.getElementById('direccion');
+    const cartContainer = document.getElementById('cart-container');
+    if (cart.length === 0) {
+        // Oculta las pestañas si el carrito está vacío
+        costosTab.style.display = 'none';
+        direccionTab.style.display = 'none';
+        direccion.style.display = 'none';
+
+    } else {
+        // Muestra las pestañas si el carrito tiene productos
+        costosTab.style.display = 'block';
+        direccionTab.style.display = 'block';
+        direccion.style.display = 'none';
+    }
 }
 
 // Actualizar la cantidad del producto y recalcular el subtotal
